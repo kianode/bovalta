@@ -5,8 +5,17 @@ export class User {
   @PrimaryGeneratedColumn()
   id!: number;
 
+  @Column({ type: 'varchar' })
+  role!: string;
+
   @Column()
-  name!: string;
+  firstName!: string;
+
+  @Column()
+  lastName!: string;
+
+  @Column()
+  telNumber!: string;
 
   @Column({ unique: true })
   email!: string;

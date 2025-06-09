@@ -1,7 +1,8 @@
 import Fastify from "fastify";
 import cors from "@fastify/cors"; // 👈 importera cors
 import { AppDataSource } from "./config/typeorm.config";
-import { usersRoutes } from "./routes/users";
+import { usersRoutes } from "./routes/users.routes";
+
 
 const server = Fastify();
 
