@@ -6,7 +6,10 @@ import { Box, Typography } from "@mui/material";
 
 type User = {
   id: number;
-  name: string;
+  role: string;
+  firstName: string;
+  lastName: string;
+  telNumber: string;
   email: string;
 };
 
@@ -34,9 +37,10 @@ export default function UsersPage() {
 
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 100 },
-    { field: "name", headerName: "Förnamn", width: 200 },
+    { field: "role", headerName: "Roll", width: 200 },
+    { field: "firstName", headerName: "Förnamn", width: 200 },
     { field: "lastName", headerName: "Efternamn", width: 200 },
-    { field: "tel", headerName: "Tel", width: 200 },
+    { field: "telNumber", headerName: "Tel", width: 200 },
     { field: "email", headerName: "E-post", width: 250 },
   ];
 

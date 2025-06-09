@@ -8,18 +8,18 @@ export class User {
   @Column({ type: 'varchar' })
   role!: string;
 
-  @Column()
+  @Column({ type: 'varchar' })
   firstName!: string;
 
-  @Column()
+  @Column({ type: 'varchar' })
   lastName!: string;
 
-  @Column()
+  @Column({ type: 'varchar' })
   telNumber!: string;
 
-  @Column({ unique: true })
+  @Column({ type: 'varchar', unique: true })
   email!: string;
 
-  @Column({ default: () => 'CURRENT_TIMESTAMP' })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   createdAt!: Date;
 }
