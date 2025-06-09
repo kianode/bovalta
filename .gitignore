@@ -16,7 +16,7 @@ coverage/
 jest-cache/
 jest-output/
 
-# # === Build output next.js ===
+# === Build output next.js ===
 .next/                # frontend Next.js build
 out/                  # optional Next.js static export
 
